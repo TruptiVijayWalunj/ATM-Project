@@ -26,7 +26,21 @@ This project is built using **Java** with a console-based interface and is ideal
 - 📦 **Standard Java Libraries** – No external dependencies
 
 ---
+## 📸 Output Screenshots
 
+![Output1](screenshots/output1.png)
+
+![output2 ](screenshots/output2.png)
+
+![output3 ](screenshots/output3.png)
+
+![output4 ](screenshots/output4.png)
+
+![output5 ](screenshots/output5.png)
+
+![output6 ](screenshots/output6.png)
+
+![output7 ](screenshots/output7.png)
 
 ---
 
