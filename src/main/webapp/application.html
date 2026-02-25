@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Application Form</title>
+    <style>
+    body{ background-image:url(" d-rendering-atm-machine-dollars-falling-out-diagram-lined-blue-background-management-finance-money-risks-savings-166412056.webp "); 
+     background-size:cover;}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;  
+        }
+        button {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ATM Application Form</h2>
+        <form action="AtmServlet" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+
+            <label for="atm">ATM Number:</label>
+            <input type="text" id="atm" name="atm" pattern="[0-9]{16}" required placeholder="Enter 16-digit ATM number">
+
+            <label for="pin">PIN:</label>
+            <input type="password" id="pin" name="pin" pattern="[0-9]{4}" required placeholder="Enter 4-digit PIN">
+
+            <button type="button" class="btn btn-primary"><a href="additional.html">next</a></button>
+        </form>
+    </div>
+</body>
+</html>

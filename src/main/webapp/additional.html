@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Simulation - Additional Details</title>
+    <style>
+    body{ background-image:url(" d-rendering-atm-machine-dollars-falling-out-diagram-lined-blue-background-management-finance-money-risks-savings-166412056.webp "); 
+     background-size:cover;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            }
+        
+        form {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="radio"] {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>ATM Additional Details</h2>
+    <form>
+        <label for="religion">Religion:</label>
+        <input type="text" id="religon" name="religon">
+        <br><br>
+
+        <label for="income">Income:</label>
+        <select id="income" name="income">
+            <option value="less_100000">&lt; 1,00,000</option>
+            <option value="less_250000">&lt; 2,50,000</option>
+            <option value="less_500000">&lt; 5,00,000</option>
+            <option value="upto_1000000"> 10,00,000</option>
+        </select>
+        <br><br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation">
+        <br><br>
+
+        <label for="pan">PAN Number:</label>
+        <input type="text" id="pan" name="pan" maxlength="10">
+        <br><br>
+
+        <label for="aadhaar">Aadhaar Number:</label>
+        <input type="text" id="aadhaar" name="aadhaar" maxlength="12">
+        <br><br>
+
+        <label>Senior Citizen:</label>
+        <input type="radio" id="senior_yes" name="senior_citizen" value="yes"> Yes
+        <input type="radio" id="senior_no" name="senior_citizen" value="no"> No
+        <br><br>
+
+        
+            <button type="button" class="btn btn-primary"> <a href="account.html"> next</a></button>
+        </form>
+</body>
+
+</html>

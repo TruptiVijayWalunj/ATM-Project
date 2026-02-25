@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ATM - login.html</title>
+    <style>
+    body{ background-image:url(" d-rendering-atm-machine-dollars-falling-out-diagram-lined-blue-background-management-finance-money-risks-savings-166412056.webp "); 
+     background-size:cover;}
+    
+    body
+         {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gray;
+        }
+        .signup-container {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+            width: 48%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome to ATM</h2>
+        <form action ="login" method="post"onsubmit=" return validateLogin()">
+        <form id="/login">
+            <label>Card No:</label>
+            <input type="text" id="cardNumber" placeholder="Enter Card Number" required>
+            <label>PIN:</label>
+            <input type="password" id="pin" placeholder="Enter PIN" required>
+            <div class="button-container">
+            <button type="button" class="btn btn-primary"><a href="transaction.html">login</a></button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+    
+    <script>
+        function login() {
+            let cardNumber = document.getElementById('cardNumber').value;
+            let pin = document.getElementById('pin').value;
+            let errorMessage = document.getElementById('error-message');
+            
+            if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+                errorMessage.textContent = "Invalid card number. It should be 16 digits.";
+                return;
+            }
+            
+            if (pin.length !== 4 || isNaN(pin)) {
+                errorMessage.textContent = "Invalid PIN. It should be 4 digits.";
+                return;
+            }
+            
+            alert("login  successful!");
+            // Proceed with storing user data or authentication
+        }
+    </script>
+</body>
+</html>
+																													

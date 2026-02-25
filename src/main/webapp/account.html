@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Account Details </title>
+    <style>
+    body{ background-image:url(" d-rendering-atm-machine-dollars-falling-out-diagram-lined-blue-background-management-finance-money-risks-savings-166412056.webp "); 
+     background-size:cover;}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        input[type="next"] {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>ATM Account Details Form</h2>
+<form action="/Atm_simulation_system/Accounts" method="post">
+            <label for="accountType">Select Account Type:</label><br>
+            <select id="accountType" name="accountType" required>
+                <option value="saving">Saving Account</option>
+                <option value="current">Current Account</option>
+                <option value="fixed">Fixed Account</option>
+                <option value="recurring">Recurring Deposit Account</option>
+            </select><br><br>
+            
+            <label for="cardNumber">Card Number (16 digits):</label><br>
+            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{16}" maxlength="16" required><br><br>
+            
+            <label for="pin">PIN (4 digits):</label><br>
+            <input type="password" id="pin" name="pin" pattern="\d{4}" maxlength="4" required><br><br>
+            
+            <label>Services Required:</label><br>
+            <input type="checkbox" id="atmCard" name="services[]" value="ATM Card">
+            <label for="atmCard">ATM Card</label><br>
+            
+            <input type="checkbox" id="mobileBanking" name="services[]" value="Mobile Banking">
+            <label for="mobileBanking">Mobile Banking</label><br>
+            
+            <input type="checkbox" id="chequeBook" name="services[]" value="Cheque Book">
+            <label for="chequeBook">Check Book</label><br>
+            
+            <input type="checkbox" id="internetBanking" name="services[]" value="Internet Banking">
+            <label for="internetBanking">Internet Banking</label><br>
+            
+            <input type="checkbox" id="emailSmsAlerts" name="services[]" value="Email and SMS Alerts">
+            <label for="emailSmsAlerts">Email and SMS Alerts</label><br>
+            
+            <input type="checkbox" id="eStatement" name="services[]" value="E-Statement">
+            <label for="eStatement">E-Statement</label><br><br>
+            
+            <button type="button" class="btn btn-primary"><a href="login.html">next</a></button>
+            </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>Accounts</servlet-name>
+        <servlet-class>accountservlet.Accounts</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Accounts</servlet-name>
+        <url-pattern>/Accounts</url-pattern>
+    </servlet-mapping>
+</web-app>

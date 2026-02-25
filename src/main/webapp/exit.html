@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Exit</title>
+    <style>
+    body{ background-image:url(" d-rendering-atm-machine-dollars-falling-out-diagram-lined-blue-background-management-finance-money-risks-savings-166412056.webp "); 
+     background-size:cover;}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:gray;
+        }
+        .exit-container {
+            background:white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #dc3545;
+            color:green;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="exit-container">
+        <h2>Thank You</h2>
+            <button type="button" class="btn btn-primary"><a href="login.html">Exit</a></button>
+    </div>
+
+    <script>
+        function exitATM() {
+            window.location.href = "login.html"; // Redirects to login page
+        }
+    </script>
+
+</body>
+</html>
+ 
